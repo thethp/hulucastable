@@ -1,36 +1,28 @@
 {
   "manifest_version": 2,
-
   "name": "hulucaster",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Make it easy to stream hulu to chromecast",
-
-  "background": {
-    "page": "extension.html",
-    "persistent": false
-  },
-
-  "browser_action": {
-    "default_icon": "icon.png"
-  },
-
   "content_scripts": [
     {
       "matches": ["*://*.hulu.com/*", "*://hulu.com/*"],
-      "js": ["node_modules/jquery/dist/jquery.min.js","hulucastable_extension.js"],
+      "js": ["jquery.min.js","hulucastable_extension.js"],
       "all_frames": true
     }
   ],
-
   "web_accessible_resources": [
-    "node_modules/jquery/dist/jquery.min.map"
+    "jquery.min.map"
   ],
-
   "permissions": [
     "tabs",
      "*://*/*"
   ],
-
   "homepage_url": "http://thpcod.es/hulucaster",
-  "author": "Todd H. Page"
+  "author": "Todd H. Page",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png",
+    "257": "icon257.png"
+  }
 }
