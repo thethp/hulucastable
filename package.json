@@ -1,0 +1,28 @@
+{
+  "name": "hulucastable",
+  "version": "0.0.1",
+  "description": "A tool to make it easy to cast hulu videos to google chrome",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thethp/hulucastable.git"
+  },
+  "keywords": [
+    "hulu",
+    "hulu",
+    "plus",
+    "chromecast",
+    "cast",
+    "bookmarklet"
+  ],
+  "author": "Todd H. Page",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thethp/hulucastable/issues"
+  },
+  "homepage": "https://github.com/thethp/hulucastable",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-bookmarklet-thingy": "~0.2.0"
+  }
+}
