@@ -7,7 +7,7 @@
 
   "background": {
     "page": "extension.html",
-    "persistent": true
+    "persistent": false
   },
 
   "browser_action": {
@@ -17,7 +17,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.hulu.com/*", "*://hulu.com/*"],
-      "js": ["node_modules/jquery/dist/jquery.min.js","hulucastable_extension.js"]
+      "js": ["node_modules/jquery/dist/jquery.min.js","hulucastable_extension.js"],
+      "all_frames": true
     }
   ],
 
@@ -25,7 +26,10 @@
     "node_modules/jquery/dist/jquery.min.map"
   ],
 
-  "permissions": ["<all_urls>"],
+  "permissions": [
+    "tabs",
+     "*://*/*"
+  ],
 
   "homepage_url": "http://thpcod.es/hulucaster",
   "author": "Todd H. Page"

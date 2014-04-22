@@ -6,7 +6,7 @@ javascript:(function(){
       if(videoIDStr.indexOf('deo/') > 0) {
         videoIDStr = videoIDStr.substring(videoIDStr.indexOf('deo/')+4,videoIDStr.indexOf('?'));
         $(el).attr('href', '/stand_alone/'+videoIDStr);
-        $('.beacon-click .description').css('background-color','#900');
+        $('.beacon-click .description').css('background-color','#A1CB39');
       }
     }
   });
