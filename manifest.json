@@ -7,7 +7,7 @@
 
   "background": {
     "page": "extension.html",
-    "persistent": false
+    "persistent": true
   },
 
   "browser_action": {
@@ -16,7 +16,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": ["*://*.hulu.com/*", "*://hulu.com/*"],
       "js": ["node_modules/jquery/dist/jquery.min.js","hulucastable_extension.js"]
     }
   ],
